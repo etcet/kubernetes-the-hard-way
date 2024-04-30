@@ -12,7 +12,7 @@ Here we will install the container runtime `containerd` from the Ubuntu distribu
 
 [//]: # (host:node01-node02)
 
-You can perform this step with [tmux](01-prerequisites.md#running-commands-in-parallel-with-tmux).
+You can perform this step with [tmux](../VirtualBox/docs/01-prerequisites.md#running-commands-in-parallel-with-tmux).
 
 1. Update the apt package index and install packages needed to use the Kubernetes apt repository:
     ```bash

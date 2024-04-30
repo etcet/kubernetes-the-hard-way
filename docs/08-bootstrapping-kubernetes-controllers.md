@@ -11,7 +11,7 @@ If you examine the command line arguments passed to the various control plane co
 
 The commands in this lab up as far as the load balancer configuration must be run on each controller instance: `controlplane01`, and `controlplane02`. Login to each controller instance using SSH Terminal.
 
-You can perform this step with [tmux](01-prerequisites.md#running-commands-in-parallel-with-tmux).
+You can perform this step with [tmux](../VirtualBox/docs/01-prerequisites.md#running-commands-in-parallel-with-tmux).
 
 ## Provision the Kubernetes Control Plane
 

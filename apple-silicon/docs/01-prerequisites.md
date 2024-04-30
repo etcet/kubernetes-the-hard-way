@@ -19,11 +19,9 @@ Additionally
 
 * Your account on your Mac must have admin privilege and be able to use `sudo`
 
-Clone this repo down to your Mac. Open your Mac's terminal application. All commands in this guide are executed from the terminal.
+* Clone this repo down to your Mac. Open your Mac's terminal application. All commands in this guide are executed from the terminal.
 
     ```bash
-    mkdir ~/kodekloud
-    cd ~/kodekloud
     git clone https://github.com/mmumshad/kubernetes-the-hard-way.git
     cd kubernetes-the-hard-way/apple-silicon
     ```

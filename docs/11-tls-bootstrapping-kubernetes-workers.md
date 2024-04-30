@@ -26,7 +26,7 @@ So let's get started!
 
 **Certificates API:** The Certificate API (as discussed in the lecture) provides a set of APIs on Kubernetes that can help us manage certificates (Create CSR, Get them signed by CA, Retrieve signed certificate etc). The worker nodes (kubelets) have the ability to use this API to get certificates signed by the Kubernetes CA.
 
-# Pre-Requisite
+# Prerequisites
 
 **kube-apiserver** - Ensure bootstrap token based authentication is enabled on the kube-apiserver.
 
@@ -41,7 +41,7 @@ So let's get started!
 
 > Note: We have already configured these in lab 8 in this course
 
-# Step 1 Create the Boostrap Token to be used by Nodes (Kubelets) to invoke Certificate API
+## Step 1 Create the Boostrap Token to be used by Nodes (Kubelets) to invoke Certificate API
 
 [//]: # (host:controlplane01)
 
@@ -259,7 +259,7 @@ It is now time to configure the second worker to TLS bootstrap using the token w
 For `node01` we started by creating a kubeconfig file with the TLS certificates that we manually generated.
 Here, we don't have the certificates yet. So we cannot create a kubeconfig file. Instead we create a bootstrap-kubeconfig file with information about the token we created.
 
-This is to be done on the `node02` node. Note that now we have set up the load balancer to provide high availibilty across the API servers, we point kubelet to the load balancer.
+This is to be done on the `node02` node. Note that now we have set up the load balancer to provide high availabilty across the API servers, we point kubelet to the load balancer.
 
 Set up some shell variables for nodes and services we will require in the following configurations:
 
